@@ -19,7 +19,7 @@ def draw_loss_curves(ax, rows, x_key, x_label, series, **line_options):
         # Fill only the x/y arguments with the prepared xs/ys, respectively.
         # Keep label, marker, markersize and **line_options. Axis labels, legend,
         # CSV aggregation, evaluation and file saving are provided outside this block.
-        ax.plot(todo("plots.x"), todo("plots.y"),
+        ax.plot(xs, ys,
                 label=label, marker='o', markersize=3, **line_options)
     ax.set(xlabel=x_label, ylabel='Cross-entropy loss (nats / character)')
     ax.legend(fontsize=8)

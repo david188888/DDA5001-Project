@@ -23,7 +23,7 @@ def causal_mask(size, device=None):
     # Keep the supplied shape, dtype and device. Choose the tril diagonal
     # that permits the current token and all earlier tokens, never future tokens.
     return torch.ones(size, size, dtype=torch.bool, device=device).tril(
-        diagonal=todo("causal_mask.diagonal"))
+        diagonal=0)
 
 class LayerNorm(nn.Module):
     """ LayerNorm but with an optional bias. PyTorch doesn't support simply bias=False """
@@ -250,14 +250,14 @@ class GPT(nn.Module):
             # Fill lr from this function's learning_rate argument; do not hard-code,
             # rescale it, implement an optimizer, or import an optimizer from another file.
             optimizers = [torch.optim.AdamW(
-                all_groups, lr=todo("optimizer_adamw.lr"), betas=betas, **extra_args)]
+                all_groups, lr=learning_rate, betas=betas, **extra_args)]
         elif optimizer_name == 'sgdm':
             # TODO optimizer_sgdm: Set optimizers to a list containing SGD(all_groups) with the supplied SGDM LR, momentum and Nesterov setting.
             # Use ONLY torch.optim.SGD (momentum SGD), not Adam or a custom class.
             # Fill lr from sgdm_learning_rate. Keep the supplied momentum/Nesterov
             # settings and parameter groups; do not create an auxiliary optimizer.
             optimizers = [torch.optim.SGD(
-                all_groups, lr=todo("optimizer_sgdm.lr"),
+                all_groups, lr=sgdm_learning_rate,
                 momentum=sgdm_momentum, nesterov=sgdm_nesterov)]
         elif optimizer_name == 'muon':
             if not hasattr(torch.optim, 'Muon'):
@@ -277,7 +277,7 @@ class GPT(nn.Module):
             # parameter membership, use a fallback optimizer, or add extra updates.
             auxiliary = torch.optim.AdamW(other_groups, lr=learning_rate, betas=betas, **extra_args)
             muon = torch.optim.Muon(
-                hidden, lr=todo("optimizer_muon.lr"), momentum=todo("optimizer_muon.momentum"),
+                hidden, lr=muon_learning_rate, momentum=muon_momentum,
                 weight_decay=weight_decay, adjust_lr_fn='original')
             optimizers = [auxiliary, muon]
         else:

@@ -40,7 +40,7 @@ def prediction_windows(data, starts, block_size):
     # x and y must index the SAME original token sequence. Fill the offset
     # for the next token position; do not add a number to token IDs themselves.
     x = data[starts[:, None] + offsets]
-    y = data[starts[:, None] + offsets + todo("shifted_labels.offset")]
+    y = data[starts[:, None] + offsets + 1]
     return x, y
 
 
@@ -52,7 +52,7 @@ def step_optimizers(optimizers):
         # The enclosing loop is provided: every optimizer must step exactly once.
         # Do not add backward, zero_grad, clipping, closures or another loop here.
         # This helper is called once AFTER all gradient accumulation and clipping.
-        todo("optimizer_step")
+        optimizer.step()
 
 
 def get_batch(data, generator, config, device):

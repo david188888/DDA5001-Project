@@ -13,7 +13,7 @@ Thumbs.db
 .vscode/
 
 # Runs and generated artifacts. The supplied data/*.bin and meta.pkl are tracked.
-runs/
+# runs/ is synced through git for small files only (csv/json/log/png/txt); checkpoints stay on the server.
 outputs/
 checks/
 setup-evidence/
@@ -22,6 +22,7 @@ setup-evidence/
 *.ckpt
 *.pt.sha256
 *.log
+!**/runs/**/*.log
 *.tmp
 *.zip
 requirements-local-resolved.txt
