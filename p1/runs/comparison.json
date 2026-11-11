@@ -1,0 +1,8 @@
+{
+  "images": [
+    "comparison_tokens_vs_tokens.png",
+    "comparison_tokens_vs_train_seconds.png"
+  ],
+  "warnings": [],
+  "note": "Lines connect measured points. Inspect ordering changes within the recorded range only; no crossing is required."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "step": 5000,
+  "tokens": 92160000,
+  "train_seconds": 1789.9352807984687,
+  "checkpoint_seconds": 300.19207989936695,
+  "wall_seconds": 2120.380708910059,
+  "endpoint_scores": {
+    "loss": 3.979210913181305,
+    "perplexity": 53.474821298229976,
+    "bits_per_character": 5.740787851097912
+  },
+  "best_val_loss": 1.5511826872825623,
+  "tokens_per_second": 51487.89511478232,
+  "peak_memory_bytes": 21774312448,
+  "budget": "tokens",
+  "output": "/data/ml/DDA5001-Project/p1/runs/adamw-default"
+}

@@ -1,0 +1,34 @@
+{
+  "python": "3.12.16",
+  "torch": "2.9.1+cu128",
+  "kernel_taint_at_start": 12289,
+  "checkpoint_io": "fsync-clean-cache-hint-atomic-replace-directory-fsync-v2",
+  "initialization": "random_from_scratch",
+  "model_preset": "gpt2-medium",
+  "model_parameters": 302368768,
+  "model_parameters_without_positions": 302106624,
+  "cuda_runtime": "12.8",
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cuda_visible_devices": "1",
+  "muon_implementation": "torch.optim.Muon/original",
+  "source_sha256": {
+    "sample.py": "a595ffc18e4513f32652c686e65d05e018f41e3d892ead4a9e432ea1bed9f343",
+    "export_results.py": "4010c36b198d7b367d845aa0c314149a71a63bfdc446b35b537a959a7c711105",
+    "train.py": "e4b0a91c7c3ee44c59a128cc0b7eef5a139ef3fb664df81208689139f9bbf69d",
+    "run_experiments.py": "d8e6a3d450dc2d900e17e3c4fb7253cb1c33d84b4fa3734e67da52bda29cec57",
+    "checkpoint_io.py": "0dc9560b4891e589bf3bd6fab171230bc22d8d7bbd7811d50b0793d9b2c1f5c7",
+    "run_records.py": "1ee27114e659f72b78b10b11e9eef24ebe11b435248b7e4be50de13aa1f27656",
+    "model.py": "f7a336012b81f3e8437a4b9fb0085d155ef4f376ddfdbb3ceda9c4feb64a656d",
+    "plot.py": "6940a78ffd7dada677faf9f44a3664395d419053636c5d8128eba607fa15b597",
+    "check_solution.py": "7cbed764fda5370f4bb583ed00378d002bbd8e7504e755d8d8702dbc0989da7e",
+    "configurator.py": "6421d8885d3e7fa06fa297dc4fe53ee47afbcf2260fdc0e5fa4a39fac5017138",
+    "evaluate.py": "b19470dacef5fb0819e3994b9ef1b70390d242aca2872954276b9b8c194768e5",
+    "exercise_helpers.py": "a0e177d95a3842308cb8cdc7173ae7a5f66352723f6655ed1a6395a6e23691c6"
+  },
+  "dataset_sha256": {
+    "val.bin": "d37d30cc0c8327c270d493299c3dca54135f6d5f1c9ef60cda78076e311204b1",
+    "train.bin": "6ec305602a99ac2802745a134e1f5e33e2231b4855525b00b9aebb730ac2626f"
+  }
+}

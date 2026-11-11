@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "step": 5000,
+  "tokens": 92160000,
+  "train_seconds": 1798.9093398461118,
+  "checkpoint_seconds": 260.2826144644059,
+  "wall_seconds": 2090.1818853481673,
+  "endpoint_scores": {
+    "loss": 1.6654883325099945,
+    "perplexity": 5.288255046182086,
+    "bits_per_character": 2.402791757970598
+  },
+  "best_val_loss": 1.511301726102829,
+  "tokens_per_second": 51231.04203121423,
+  "peak_memory_bytes": 20564762112,
+  "budget": "tokens",
+  "output": "/data/ml/DDA5001-Project/p1/runs/sgdm-default"
+}
