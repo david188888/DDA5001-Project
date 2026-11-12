@@ -33,3 +33,6 @@ requirements-local-resolved.txt
 !.env.example
 .codex/
 .opencode/
+
+# Report lives in its own Overleaf-synced repo (david188888/DDA5001-P1-Report).
+report/
