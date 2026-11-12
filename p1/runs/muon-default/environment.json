@@ -11,7 +11,7 @@
   "device": "cuda:0",
   "dtype": "bfloat16",
   "gpu": "NVIDIA GeForce RTX 4090",
-  "cuda_visible_devices": "1",
+  "cuda_visible_devices": "0",
   "muon_implementation": "torch.optim.Muon/original",
   "source_sha256": {
     "sample.py": "a595ffc18e4513f32652c686e65d05e018f41e3d892ead4a9e432ea1bed9f343",

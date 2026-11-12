@@ -2,16 +2,16 @@
   "status": "completed",
   "step": 5000,
   "tokens": 92160000,
-  "train_seconds": 2970.3245577039197,
-  "checkpoint_seconds": 200.94259856641293,
-  "wall_seconds": 3208.445939309895,
+  "train_seconds": 2048.864929769188,
+  "checkpoint_seconds": 165.3928359868005,
+  "wall_seconds": 2245.9992563230917,
   "endpoint_scores": {
-    "loss": 4.08451646566391,
-    "perplexity": 59.413202481142164,
-    "bits_per_character": 5.892711649442639
+    "loss": 4.10035765171051,
+    "perplexity": 60.361872264100256,
+    "bits_per_character": 5.9155656499938685
   },
-  "best_val_loss": 1.538242906332016,
-  "tokens_per_second": 31026.912450011954,
+  "best_val_loss": 1.5419245064258575,
+  "tokens_per_second": 44981.003218392805,
   "peak_memory_bytes": 20566303744,
   "budget": "tokens",
   "output": "/data/ml/DDA5001-Project/p1/runs/muon-default"
