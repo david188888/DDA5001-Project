@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "step": 5000,
+  "tokens": 92160000,
+  "train_seconds": 2095.3935122992843,
+  "checkpoint_seconds": 178.79545120429248,
+  "wall_seconds": 2342.1667371359654,
+  "endpoint_scores": {
+    "loss": 4.238933205604553,
+    "perplexity": 69.33384741218575,
+    "bits_per_character": 6.115487914385246
+  },
+  "best_val_loss": 1.566971868276596,
+  "tokens_per_second": 43982.19210809354,
+  "peak_memory_bytes": 20566303744,
+  "budget": "tokens",
+  "output": "/data/ml/DDA5001-Project/p1/runs/muon-other"
+}
