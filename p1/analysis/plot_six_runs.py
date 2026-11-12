@@ -30,7 +30,7 @@ def main():
     args = parser.parse_args()
     runs_dir = Path(args.runs_dir)
     runs = [load_run(p.parent) for p in sorted(runs_dir.glob('*/summary.json'))]
-    fig, axes = plt.subplots(1, 3, figsize=(10, 3), sharey=True)
+    fig, axes = plt.subplots(1, 3, figsize=(10, 2.7), sharey=True)
     for ax, method in zip(axes, TITLES):
         group = sorted((r for r in runs if r['method'] == method), key=lambda r: r['rate'])
         for run, color in zip(group, ['tab:blue', 'tab:red']):
